@@ -15,14 +15,7 @@ namespace Galaxy_Swapper_v2.Workspace.Utilities
             var Parse = Endpoint.Read(Endpoint.Type.Presence);
 
             Client = new DiscordRpcClient(Parse["ApplicationID"].Value<string>());
-            Client.Initialize();
-            Client.OnReady += (sender, e) =>
-            {
-                if (!string.IsNullOrEmpty(e.User.Username) && !string.IsNullOrEmpty(e.User.GetAvatarURL(User.AvatarFormat.PNG)))
-                {
-                    User = e.User;
-                }
-            };
+            
 
             RichPresence = new RichPresence()
             {
@@ -39,14 +32,9 @@ namespace Galaxy_Swapper_v2.Workspace.Utilities
                 }
             };
 
-            if (Settings.Read(Settings.Type.RichPresence).Value<bool>())
-                Client.SetPresence(RichPresence);
+            
         }
 
-        public static void Update(string Details)
-        {
-            if (Settings.Read(Settings.Type.RichPresence).Value<bool>())
-                Client.UpdateDetails(Details);
-        }
+        
     }
 }

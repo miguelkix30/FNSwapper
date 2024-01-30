@@ -33,7 +33,6 @@ namespace Galaxy_Swapper_v2.Workspace.Usercontrols.Overlays
                 Options_Items.Children.Add(NewOption);
             }
 
-            Presence.Update($"{DisplayName} (Options)");
         }
 
         private Image CreateCosmetic(Option Option)

@@ -89,7 +89,6 @@ namespace Galaxy_Swapper_v2.Workspace.Usercontrols.Overlays
             if (!string.IsNullOrEmpty(Option.OptionMessage) && Option.OptionMessage.ToLower() != "false")
                 Message.Display(Languages.Read(Languages.Type.Header, "Warning"), Option.OptionMessage, MessageBoxButton.OK);
 
-            Presence.Update(Option.Name);
         }
 
         public enum Type

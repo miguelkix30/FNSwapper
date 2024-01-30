@@ -21,7 +21,6 @@ namespace Galaxy_Swapper_v2.Workspace.Usercontrols.Overlays
             Import.Content = Languages.Read(Languages.Type.View, "LobbyView", "Import");
             Reset.Content = Languages.Read(Languages.Type.View, "LobbyView", "Reset");
 
-            Presence.Update("Lobby Background Changer");
 
             if (IsLoaded)
                 return;

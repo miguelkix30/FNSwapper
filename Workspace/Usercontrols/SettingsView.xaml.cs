@@ -295,7 +295,6 @@ namespace Galaxy_Swapper_v2.Workspace.Usercontrols
             if (DiscordRichPresence.IsChecked == true)
             {
                 Presence.Initialize();
-                Presence.Update("Settings");
             }
             else
                 Presence.Client.ClearPresence();

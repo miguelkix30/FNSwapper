@@ -62,7 +62,6 @@ namespace Galaxy_Swapper_v2.Workspace.Components
             this.Default.Visibility = Visibility.Hidden;
             this.Clicked.Visibility = Visibility.Visible;
             this.Color = Properties.Colors.Blue_Brush;
-            Utilities.Presence.Update(Presence);
         }
 
         private void CTabControl_MouseEnter(object sender, System.Windows.Input.MouseEventArgs e)

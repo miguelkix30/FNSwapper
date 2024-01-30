@@ -46,7 +46,7 @@ namespace Galaxy_Swapper_v2.Workspace.Usercontrols
             Tip_3.Text = Languages.Read(Languages.Type.View, "LoginView", "Tip_3");
             Tip_4.Text = Languages.Read(Languages.Type.View, "LoginView", "Tip_4");
 
-            Presence.Update("Login Page");
+
         }
 
         private void Password_Focus(object sender, RoutedEventArgs e)

@@ -68,7 +68,6 @@ namespace Galaxy_Swapper_v2.Workspace.Usercontrols.Overlays
             }
 
             Slider.Value = 80;
-            Presence.Update("FOV Changer");
         }
 
         private void Close_Click(object sender, MouseButtonEventArgs e) => Memory.MainView.RemoveOverlay();
